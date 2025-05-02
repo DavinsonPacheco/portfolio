@@ -1,19 +1,31 @@
 import { Routes } from '@angular/router';
+import {ProjectsComponent} from "./projects/projects.component";
+import {AboutMeComponent} from "./about-me/about-me.component";
+import {SkillsComponent} from "./skills/skills.component";
+import {ContactComponent} from "./contact/contact.component";
 
 export const routes: Routes = [
+  { path: '',
+    redirectTo: 'about-me',
+    pathMatch: 'full'
+  },
+  {
+    path: 'about-me',
+    component: AboutMeComponent,
+  },
   { path: 'projects',
-    loadChildren: () => import('./projects/projects.routes').then( m => m.PROJECTS_ROUTES)
+    component: ProjectsComponent
   },
   {
     path: 'skills',
-    loadChildren: ()=> import('./skills/skills.routes').then( m => m.SKILLS_ROUTES)
+    component: SkillsComponent
   },
   {
     path: 'contact',
-    loadChildren: ()=> import('./contact/contact.routes').then( m => m.CONTACT_ROUTES)
+    component: ContactComponent
   },
   {
     path: '**',
-    redirectTo: 'projects'
+    redirectTo: 'about-me'
   }
 ];
