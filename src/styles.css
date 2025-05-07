@@ -7,6 +7,11 @@
 
 body {
   font-family: 'Poppins', 'Poppins Fallback', sans-serif;
+  min-height: 100vh;
+
+  background: radial-gradient(circle at center, #011d14 0%, #000200 80%);
+  color: #fff;
+
 }
 
 

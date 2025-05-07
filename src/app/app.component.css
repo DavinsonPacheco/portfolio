@@ -10,7 +10,7 @@
 
 /* Estilo de la tarjeta principal */
 .container-main__card {
-  background-color: white;
+  /*background-color: white;*/
   border-radius: 10px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   max-width: 600px;
@@ -39,9 +39,12 @@
 }
 
 .main-card-body h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #333;
   margin-bottom: 0.5rem;
+
+  font-weight: 800;
+  text-shadow: 1px 1px 0 #000;
 }
 
 .main-card-body p {
@@ -69,18 +72,16 @@
   display: inline-flex;
   align-items: center;
   font-size: 1.2rem;
-  color: #007BFF;
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
-  margin-top: 1rem;
 }
 
-.main-card-body a[role="button"] svg {
-  margin-left: 0.5rem;
+.main-card-body a[role="button"] img {
   transition: transform 0.3s ease;
 }
 
-.main-card-body a[role="button"]:hover svg {
+.main-card-body a[role="button"]:hover img {
   transform: translateX(5px);
 }
 
