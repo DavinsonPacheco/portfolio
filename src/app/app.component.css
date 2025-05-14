@@ -1,4 +1,4 @@
-/* Estilo general de la sección de presentación */
+
 .container-presentation {
   display: flex;
   justify-content: center;
@@ -8,105 +8,99 @@
   background: none;
 }
 
-/* Estilo de la tarjeta principal */
-.container-main__card {
-  /*background-color: white;*/
-  border-radius: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  max-width: 600px;
-  width: 100%;
-  padding: 2rem;
-}
-
-/* Estilo de la cabecera de la tarjeta */
-.main-card-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1.5rem;
-}
-
-.profile-container img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilo del cuerpo de la tarjeta */
+/* Estilo de la presentación superior*/
 .main-card-body {
   text-align: center;
 }
 
-.main-card-body h1 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 0.5rem;
-
-  font-weight: 800;
-  text-shadow: 1px 1px 0 #000;
+.description-container .full-name {
+  font-family: 'Borsok', sans-serif;
+  font-size: 3.5rem;
+  letter-spacing: 0.2rem;
+  font-weight: 300;
 }
 
-.main-card-body p {
-  font-size: 1.2rem;
-  color: #555;
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
+.description-container .job-description {
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
 }
 
-/* Estilo de los iconos de redes sociales */
-.main-card-body .icon-tabler {
-  width: 30px;
-  height: 30px;
-  margin: 0 0.5rem;
-  transition: transform 0.3s ease, color 0.3s ease;
+.description-container .job-description span:nth-child(2) {
+  font-family: 'Borsok', sans-serif;
+  font-weight: 200;
 }
 
-.main-card-body a:hover .icon-tabler {
-  transform: scale(1.2);
-  color: #007BFF;
+.description-container .full-name span:nth-child(2),
+.description-container .job-description span:nth-child(2) {
+  color: #34d399;
+  margin-left: 0.9rem;
 }
 
-/* Estilo del botón de descarga del CV */
-.main-card-body a[role="button"] {
+.links-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.links-container a {
   display: inline-flex;
   align-items: center;
   font-size: 1.2rem;
   color: #ffffff;
   text-decoration: none;
+}
+
+.links-container a:not(:last-child) {
+  background-color: #5bdaac;
+  padding: 0.3rem;
+  border-radius: 100%;
   font-weight: bold;
 }
 
-.main-card-body a[role="button"] img {
+.links-container a:last-child {
+  font-size: 0.8rem;
+  background-color: #5bdaac;
+  padding: 0.1rem 1rem 0.1rem 1rem;
+  color: #000000;
+  font-weight: bold;
+}
+
+.links-container a img {
   transition: transform 0.3s ease;
 }
 
-.main-card-body a[role="button"]:hover img {
-  transform: translateX(5px);
+.links-container a:hover img {
+  transform: translateX(2px);
 }
 
-/* Estilo del menú de portafolio */
-.container-portfolio-menu {
+/* <------------------- Estilo del menú de portafolio ("sobre mi, proyectos...")-------------------> */
+.container-menu {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
+  margin: 2rem;
 }
 
-.portfolio-menu button {
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  padding: 0.8rem 2rem;
-  margin: 0 0.5rem;
+.main-menu{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-menu button {
+  padding: 12px 24px;
+  border: 2px solid #34d399;
+  background-color: transparent;
+  color: #34d399;
   font-size: 1rem;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.portfolio-menu button:hover {
-  background-color: #0056b3;
+.main-menu button:hover {
+  background-color: #34d399;
+  color: #ffffff
 }
 
 /* Estilo del footer */
@@ -114,7 +108,7 @@ footer {
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
-  background: linear-gradient(90deg, #007BFF, #00A9FF);
+  background: linear-gradient(90deg, #34d399, #a0e8cf);
   border-radius: 10px;
   font-size: 0.9rem;
   color: white;

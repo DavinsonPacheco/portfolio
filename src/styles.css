@@ -1,4 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: 'Borsok';
+  src: url('assets/fonts/boorsok.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
