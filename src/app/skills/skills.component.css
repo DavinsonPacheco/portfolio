@@ -74,8 +74,75 @@
 }
 
 /* Ajustes para pantallas más pequeñas */
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
+  .container-header h2 {
+    font-size: 1.75rem;
+  }
+
+  .container-header p {
+    font-size: 1.1rem;
+  }
+
+  .container-body h3 {
+    font-size: 1.3rem;
+  }
+
+  .container-body p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-skills {
+    padding: 1.5rem;
+  }
+
+  .container-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .container-header p {
+    font-size: 1rem;
+  }
+
+  .container-body h3 {
+    font-size: 1.2rem;
+  }
+
+  .container-body svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-skills {
+    padding: 1rem;
+  }
+
+  .container-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .container-header p {
+    font-size: 0.9rem;
+  }
+
   .container-body {
     grid-template-columns: 1fr;
   }
+
+  .container-body h3 {
+    font-size: 1.1rem;
+  }
+
+  .container-body p {
+    font-size: 0.9rem;
+  }
+
+  .container-body svg {
+    width: 36px;
+    height: 36px;
+  }
 }
+

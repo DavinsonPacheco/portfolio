@@ -1,0 +1,71 @@
+.about-me {
+  padding: 3rem 2rem;
+}
+
+.about-me__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.about-me__image {
+  flex: 1 1 18.75rem;
+  text-align: center;
+}
+
+.about-me__image img {
+  width: 100%;
+  max-width: 25rem;
+  height: auto;
+}
+
+.about-me__content {
+  flex: 1 1 31.25rem;
+}
+
+.about-me__title {
+  font-size: 2rem;
+  font-weight: bold;
+  /*color: #2c3e50;*/
+  margin-bottom: 1rem;
+}
+
+.about-me__description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.about-me__skills {
+  list-style: disc inside;
+  padding-left: 1rem;
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about-me__skill {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-me__container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-me__content {
+    text-align: center;
+  }
+
+  .about-me__skills {
+    list-style-position: inside;
+    padding-left: 0;
+  }
+}
