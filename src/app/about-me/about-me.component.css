@@ -1,3 +1,14 @@
+/*breadcrumb*/
+/*.breadcrumb{*/
+/*  width: 100%;*/
+/*  color: var(--color-primary);*/
+/*}*/
+
+.highlight {
+  font-weight: bold;
+  color: var(--color-primary); /* o el color que prefieras */
+}
+
 .about-me {
   padding: 3rem 2rem;
 }
@@ -30,13 +41,12 @@
 .about-me__title {
   font-size: 2rem;
   font-weight: bold;
-  /*color: #2c3e50;*/
   margin-bottom: 1rem;
 }
 
 .about-me__description {
-  font-size: 1.1rem;
-  color: #555;
+  font-size: 1rem;
+  color: #d2fded;
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }
@@ -44,7 +54,7 @@
 .about-me__skills {
   list-style: disc inside;
   padding-left: 1rem;
-  color: #444;
+  color: #d2fded;
   font-size: 1rem;
   line-height: 1.6;
 }
@@ -53,8 +63,13 @@
   margin-bottom: 0.5rem;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+.about-me__skills li::marker {
+  color: var(--color-primary); /* O cualquier color como #C9A227 */
+}
+
+/* 📱 Móviles grandes (como iPhone Plus, Android grandes) */
+@media (min-width: 480px) and (max-width: 767px) {
+
   .about-me__container {
     flex-direction: column;
     text-align: center;
@@ -69,3 +84,17 @@
     padding-left: 0;
   }
 }
+
+/* 📱 Móviles pequeños (como iPhone SE o muy compactos) */
+@media (max-width: 479px) {
+
+  .about-me__image img {
+    max-width: 15rem;
+  }
+
+  .about-me__title{
+    font-size: 1.5rem;
+  }
+
+}
+
