@@ -1,148 +1,82 @@
-/* Contenedor general de la sección de habilidades */
-.container-skills {
-  padding: 2rem;
-  /*background-color: #f4f4f4;*/
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 2rem;
-}
-
-/* Cabecera de la sección */
-.container-header {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.container-header h2 {
-  font-size: 2rem;
-  color: #333;
-}
-
-.container-header p {
-  font-size: 1.2rem;
-  color: #555;
-  margin-top: 0.5rem;
-}
-
-/* Cuerpo de la sección, organizado en grid */
-.container-body {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-}
-
-/* Estilo de cada habilidad */
-.container-body div {
-  background-color: white;
-  border-radius: 10px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.skills-section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 4rem 2rem;
+  /*background-color: #111;*/
+  color: #eee;
+  justify-content: space-between;
 }
 
-.container-body svg {
-  width: 48px;
-  height: 48px;
+.skills-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.skills-title {
+  font-size: 2rem;
   margin-bottom: 1rem;
-  fill: #007BFF;
+  /*color: #90ee90;*/
 }
 
-/* Título de cada habilidad */
-.container-body h3 {
-  font-size: 1.5rem;
-  color: #333;
-  margin-bottom: 0.5rem;
-}
-
-/* Línea divisoria */
-.container-body hr {
-  width: 50%;
-  margin: 0.5rem 0;
-  border: none;
-  height: 2px;
-  background-color: #007BFF;
-}
-
-/* Descripción de la habilidad */
-.container-body p {
+.skills-description {
   font-size: 1rem;
-  color: #555;
-  margin: 0.5rem 0;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: #ccc;
 }
 
-/* Ajustes para pantallas más pequeñas */
-@media (max-width: 1024px) {
-  .container-header h2 {
-    font-size: 1.75rem;
-  }
-
-  .container-header p {
-    font-size: 1.1rem;
-  }
-
-  .container-body h3 {
-    font-size: 1.3rem;
-  }
-
-  .container-body p {
-    font-size: 0.95rem;
-  }
+.skills-categories {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-@media (max-width: 768px) {
-  .container-skills {
-    padding: 1.5rem;
-  }
-
-  .container-header h2 {
-    font-size: 1.6rem;
-  }
-
-  .container-header p {
-    font-size: 1rem;
-  }
-
-  .container-body h3 {
-    font-size: 1.2rem;
-  }
-
-  .container-body svg {
-    width: 40px;
-    height: 40px;
-  }
+.skill-group h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #90ee90;
 }
 
-@media (max-width: 480px) {
-  .container-skills {
-    padding: 1rem;
-  }
-
-  .container-header h2 {
-    font-size: 1.4rem;
-  }
-
-  .container-header p {
-    font-size: 0.9rem;
-  }
-
-  .container-body {
-    grid-template-columns: 1fr;
-  }
-
-  .container-body h3 {
-    font-size: 1.1rem;
-  }
-
-  .container-body p {
-    font-size: 0.9rem;
-  }
-
-  .container-body svg {
-    width: 36px;
-    height: 36px;
-  }
+.skill-group ul {
+  list-style: none;
+  padding: 0;
 }
 
+.skill-group ul li {
+  margin-bottom: 0.4rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.skill-group ul li::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  color: #90ee90;
+  font-size: 0.8rem;
+}
+
+/* Icon grid */
+.skills-icons {
+  flex: 1;
+  min-width: 280px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 1rem;
+  align-content: start;
+}
+
+.skills-icons img {
+  width: 60px;
+  height: 60px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skills-icons img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #90ee90;
+}
