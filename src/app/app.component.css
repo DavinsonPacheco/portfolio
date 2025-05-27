@@ -85,6 +85,7 @@
 .main-menu{
   display: flex;
   justify-content: space-around;
+  gap: 1rem;
 }
 
 .main-menu button {
@@ -119,7 +120,6 @@
 footer {
   text-align: center;
   padding: 1rem;
-  margin-top: 2rem;
   background: linear-gradient(90deg, var(--color-primary));
   border-radius: 10px;
   font-size: 0.9rem;
