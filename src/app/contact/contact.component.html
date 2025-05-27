@@ -1,19 +1,25 @@
-<section class="container-contact">
-  <header class="container-header">
-    <h2>Contacto</h2>
-    <p>¿Tienes alguna pregunta o simplemente quieres charlar sobre desarrollo web? ¡Estoy aquí para ayudarte! No dudes
-      en enviarme un mensaje y te responderé lo antes posible. 😊</p>
+<section class="contact-section">
+  <header class="contact-header">
+<!--    <h2 class="contact-title">Contacto</h2>-->
+    <p class="contact-description">
+      ¿Tienes alguna pregunta o simplemente quieres charlar sobre algún desarrollo? ¡Estoy aquí para ayudarte!
+      No dudes en enviarme un mensaje y te responderé lo antes posible.
+    </p>
   </header>
-  <main class="container-body">
-    <!-- Contenido de la galería -->
-    <form>
-      <div class=""><input data-slot="input" class="" aria-label="Nombre Completo" type="text" name="nombrecompleto" placeholder="Escribe tu nombre completo" id="" aria-labelledby="react-aria3800021493-:r0r7: react-aria3800021493-:r0r8:" value=""></div>
-      <div class=""><textarea placeholder="Escribe un comentario"></textarea></div>
-      <input type="submit" value="Enviar">
+
+  <main class="contact-body">
+    <form class="contact-form" action="#" method="POST">
+      <div class="form-group">
+        <label for="nombre-completo">Nombre completo</label>
+        <input type="text" id="nombre-completo" name="nombrecompleto" placeholder="Escribe tu nombre completo" required>
+      </div>
+
+      <div class="form-group">
+        <label for="comentario">Comentario</label>
+        <textarea id="comentario" name="comentario" placeholder="Escribe un comentario" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">Enviar</button>
     </form>
   </main>
-
 </section>
-
-
-
